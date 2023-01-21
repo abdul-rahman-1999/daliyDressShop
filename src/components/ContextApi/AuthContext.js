@@ -31,7 +31,7 @@ export const AuthContextProvider = ({children}) => {
     useEffect(() => {
         let email = localStorage.getItem("email")
         if(email){
-          fetch(`http://localhost:4005/users/getDetails/${email}`)
+          fetch(`https://dailydress-backend.onrender.com/users/getDetails/${email}`)
           .then((data) => data.json())
           .then((data) => {setUser1(data)})
         }

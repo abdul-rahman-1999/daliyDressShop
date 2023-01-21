@@ -136,7 +136,7 @@ console.log(error)
                     token &&  <p>{user1?.fullName}</p>
                 }
                                 {
-                  user?.displayName || user1?.fullName ? (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/dailyDress/products/cart")}><Badge badgeContent={total_items} color="primary"><ShoppingCartIcon/></Badge></Typography>) : null
+                 token || user ? (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/dailyDress/products/cart")}><Badge badgeContent={total_items} color="primary"><ShoppingCartIcon/></Badge></Typography>) : null
                 }
                                                {
                   user?.displayName || user1?.fullName ? (<Typography sx={{fontSize:"14px",fontWeight:500,margin:"16px 0px"}} onClick={logOut}>Logout</Typography>) : (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/")}>Login</Typography>)
@@ -202,7 +202,7 @@ console.log(error)
                     token &&  <p>{user1?.fullName}</p>
                 }
                                 {
-                  user?.displayName || user1?.fullName ? (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/dailyDress/products/cart")}><Badge badgeContent={total_items} color="primary"><ShoppingCartIcon/></Badge></Typography>) : null
+                  token || user ? (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/dailyDress/products/cart")}><Badge badgeContent={total_items} color="primary"><ShoppingCartIcon/></Badge></Typography>) : null
                 }
                                                 {
                   user || token ? (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={logOut}>Logout</Typography>) : (<Typography sx={{fontSize:"14px",fontWeight:500}} onClick={() => navigate("/")}>Login</Typography>)

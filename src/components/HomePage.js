@@ -10,8 +10,12 @@ import OfferBox from './OfferBox';
 function HomePage() {
 
   let navigate = useNavigate()
-  const token = localStorage.getItem("Authorization")
 
+  const token = localStorage.getItem("Authorization")
+  
+  if(!token){
+    navigate("/")
+  }
 
     const responsive = {
         superLargeDesktop: {

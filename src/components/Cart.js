@@ -42,7 +42,7 @@ function Cart() {
         />
         <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}}>{name}<br/><span style={{color:"#013e2e"}}>color : {color}</span></p>
         <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}}>₹{price}</p>
-        <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}}><RemoveIcon onClick={() => setDecrease(_id)} sx={{cursor:"pointer"}}/>{quantity}<AddIcon onClick={() => setIncrease(_id)} sx={{cursor:"pointer"}}/></p>
+        <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}}><RemoveIcon onClick={() => setDecrease(_id)} sx={{cursor:"pointer"}}/>{cart ? quantity : null}<AddIcon onClick={() => setIncrease(_id)} sx={{cursor:"pointer"}}/></p>
         <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}}>₹{total}</p>
         <p style={{fontSize:"13px",fontWeight:700,margin:"8px 0px"}} onClick={() => removeItem(_id)}><DeleteIcon sx={{color:"red",cursor:"pointer"}}/></p>
         {/* <p>{name}</p> */}
