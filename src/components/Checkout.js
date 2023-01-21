@@ -32,7 +32,7 @@ function Checkout() {
         })
             .then((data) => data.json())
               .then((data) => console.log(data),
-              toast.error('Mail Sent Regarding Your Orders', {
+              toast.success('Mail Sent Regarding Your Orders', {
                 position: "top-center",
                 autoClose: 5000,
                 hideProgressBar: false,
