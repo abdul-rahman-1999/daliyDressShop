@@ -26,7 +26,7 @@ function ForgotPassword() {
   
   })
     let addUser = (newList) => {
-          fetch("http://localhost:4005/users/forgotPassword",{
+          fetch("https://dailydress-backend.onrender.com/users/forgotPassword",{
             method:"POST",
             body: JSON.stringify(newList),
             headers: {

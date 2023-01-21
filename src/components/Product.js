@@ -22,7 +22,7 @@ function Product() {
     }
 
     const getProduct = () => {
-        fetch(`http://localhost:4005/dailyDress/products/${_id}`,
+        fetch(`https://dailydress-backend.onrender.com/dailyDress/products/${_id}`,
         {
             method:"GET",
             headers:{

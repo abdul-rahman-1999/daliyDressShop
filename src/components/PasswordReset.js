@@ -29,7 +29,7 @@ function PasswordReset() {
   
   })
     let addUser = (newList) => {
-          fetch(`http://localhost:4005/users/${email}/${token}`,{
+          fetch(`https://dailydress-backend.onrender.com/users/${email}/${token}`,{
             method:"POST",
             body: JSON.stringify(newList),
             headers: {

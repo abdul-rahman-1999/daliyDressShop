@@ -21,7 +21,7 @@ function Checkout() {
             quantity : total_items,
             total : total_price
           }
-        fetch(`http://localhost:4005/dailyDress/products/send`,{
+        fetch(`https://dailydress-backend.onrender.com/dailyDress/products/send`,{
           method:"POST",
           body: JSON.stringify(orderDetails),
           headers: {

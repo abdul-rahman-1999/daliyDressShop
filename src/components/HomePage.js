@@ -40,7 +40,7 @@ function HomePage() {
 
     
       const getItems = () => {
-        fetch("http://localhost:4005/dailyDress/products",
+        fetch("https://dailydress-backend.onrender.com/dailyDress/products",
         {
             method:"GET",
             headers:{

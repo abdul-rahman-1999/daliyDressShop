@@ -41,7 +41,7 @@ function Login() {
 })
 
 let addList = (loginUser) => {
-    fetch("http://localhost:4005/users/login",{
+    fetch("https://dailydress-backend.onrender.com/users/login",{
         method:"POST",
         body: JSON.stringify(loginUser),
         headers: {

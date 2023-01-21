@@ -31,7 +31,7 @@ function Signup() {
   
   })
     let addUser = (newList) => {
-          fetch("http://localhost:4005/users/signup",{
+          fetch("https://dailydress-backend.onrender.com/users/signup",{
             method:"POST",
             body: JSON.stringify(newList),
             headers: {
