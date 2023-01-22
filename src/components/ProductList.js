@@ -175,7 +175,7 @@ if(!token){
 
 <Box sx={{width:{xs:"80%",sm:"95%",md:"80%"},display:"flex",alignItems:"center",justifyContent:"center",flexDirection:{xs:"column",sm:"row",md:"row"},margin:"0px auto",gap:{xs:4,sm:4,md:5},flexWrap:"wrap"}}>
   {
-    item.filter((e) => e.name.toLowerCase().includes(query)).map((e) => { 
+    item.filter((e) => e.type.toLowerCase().includes(query)).map((e) => { 
       const { _id, img, name, price, sellingType } = e
      return (
 <Paper onClick={() => navigate(`/dailydress/products/${_id}`)} key={_id} sx={{width: { xs: '300px',sm:"220px", md: '250px' },textAlign:"center"}}>

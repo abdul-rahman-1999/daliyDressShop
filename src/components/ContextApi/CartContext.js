@@ -7,7 +7,7 @@ const getLocalCartData = () => {
     let newCartData = localStorage.getItem("dressCart")
     if(newCartData === []){
         return []
-    }else if(newCartData === null){
+    }else if(newCartData === "null"){
         return []
     }
     else{
