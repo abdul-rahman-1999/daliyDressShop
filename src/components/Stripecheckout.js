@@ -32,7 +32,7 @@ function Stripecheckout() {
 
   return <>
   
-   <StripeCheckout amount={total_price * 100} shippingAddress token={tokenHandler} currency="INR" stripeKey={process.env.REACT_APP_STRIPE_KEY}>npm start
+   <StripeCheckout amount={total_price * 100} shippingAddress token={tokenHandler} currency="INR" stripeKey={process.env.REACT_APP_STRIPE_KEY}>
 
    <Button variant="contained" sx={{backgroundColor:"#8E3A59",color:"white",padding:"7px 15px",margin:"8px 0px 8px 0px",width:"100%"}}>Make Payment</Button>
    <ToastContainer />
