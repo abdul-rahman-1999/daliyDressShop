@@ -13,7 +13,7 @@ function Cart() {
     const { cart, removeItem, clearCart, setDecrease, setIncrease, total_price, total_items } = useCartContext()
     let navigate = useNavigate()
 
-     const token = localStorage.getItem("Authorization")
+     const token = localStorage.getItem("Authorization")    
 
      if(!token){
        navigate("/")

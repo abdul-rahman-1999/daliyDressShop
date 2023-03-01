@@ -36,7 +36,7 @@ export const AuthContextProvider = ({children}) => {
           .then((data) => {setUser1(data)})
         }
       },[])
-
+ 
     return (
         <AuthContext.Provider value={{ googleSignIn, googleLogout, user, user1, setUser1 }}>
         {children}

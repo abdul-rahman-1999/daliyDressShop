@@ -6,8 +6,8 @@ let CartReducer = (state,action) => {
     let { item,count } = action.payload;
 
     const existingProduct = state.cart.find(
-        (cur) => cur._id === item._id
-    )
+        (cur) => cur._id === item._id   
+    )   
     
     if(existingProduct){
 
