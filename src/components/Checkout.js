@@ -9,41 +9,6 @@ import Stripecheckout from './Stripecheckout';
 function Checkout() {
 
     const { cart, total_price, total_items } = useCartContext()
-    // const { user, user1 } = UserAuth()
-
-    // const email = localStorage.getItem("email")
-
-    // let orderItems = () => {
-    //     const orderDetails = {
-    //         email : email || user.email,
-    //         name : user1.fullName || user.displayName,
-    //         quantity : total_items,
-    //         total : total_price
-    //       }
-    //     fetch(`https://dailydress-backend.onrender.com/dailyDress/products/send`,{
-    //       method:"POST",
-    //       body: JSON.stringify(orderDetails),
-    //       headers: {
-    //         "Content-Type" : "application/json",
-    //           Authorization:token
-
-    //     },
-    //     })
-    //         .then((data) => data.json())
-    //           .then((data) => console.log(data),
-    //           toast.success('Mail Sent Regarding Your Orders', {
-    //             position: "top-center",
-    //             autoClose: 5000,
-    //             hideProgressBar: false,
-    //             closeOnClick: true,
-    //             pauseOnHover: true,
-    //             draggable: true,
-    //             progress: undefined,
-    //             theme: "light",
-    //             })
-    //           )
-    //           .then((list) => console.log(list))
-    //   }
 
       let navigate = useNavigate()
 
