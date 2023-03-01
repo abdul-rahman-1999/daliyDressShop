@@ -21,7 +21,7 @@ if(!token){
   
   <Box sx={{backgroundColor:"#f2f2f2",display:"flex",alignItems:"center",padding:{xs:"30px 10px",sm:"30px",md:"30px"},height:"100vh"}}>
 <Paper sx={{padding:"30px 30px",width:{xs:"95%",sm:"90%",md:"50%"},margin:"0px auto",textAlign:"center"}}>
-        <h4 style={{fontSize:"14px",lineHeight:"22px"}}>Make Your Payment here by Entering Your Address and Card Details to send the Product to Your Address.</h4>
+        <h4 style={{fontSize:"14px",lineHeight:"22px"}}>Card Number : 4242 2424 4242 4242 & MM/YY : 12/23 & CVC : 123.</h4>
 
 
         {
